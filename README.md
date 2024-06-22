@@ -1,53 +1,29 @@
-# Nextra
+# JAVGO
 
-Simple, powerful and flexible site generation framework with everything you love
-from Next.js.
+基于 [Nextra](https://nextra.site/docs) + [Next.js](https://nextjs.org/) 搭建的技术博客，感兴趣的欢迎 Fork + Star。
 
-## Documentation
+## 开发
 
-[https://nextra.site](https://nextra.site)
+### 安装依赖
 
-## Development
+仓库使用 [PNPM Workspaces](https://pnpm.io/workspaces) 和 [Turborepo](https://github.com/vercel/turborepo)。要安装依赖项，请在项目根目录运行：
+```bash
+pnpm install
+```
 
-### Installation
-
-The Nextra repository uses [PNPM Workspaces](https://pnpm.io/workspaces) and
-[Turborepo](https://github.com/vercel/turborepo). To install dependencies, run
-`pnpm install` in the project root directory.
-
-### Build Nextra Core
+### 构建 Nextra 核心
 
 ```bash
 cd packages/nextra
 pnpm build
 ```
 
-Watch mode: `pnpm dev`
-
-### Build Nextra Theme
+## 启动站点
 
 ```bash
-cd packages/nextra-theme-docs
-pnpm build
-```
-
-| Command           | Description              |
-| ----------------- | ------------------------ |
-| pnpm dev          | Watch mode               |
-| pnpm dev:layout   | Watch mode (layout only) |
-| pnpm dev:tailwind | Watch mode (style only)  |
-
-### Development
-
-You can also debug them together with a website locally. For instance, to start
-examples/docs locally, run
-
-```bash
-cd examples/docs
+cd docs
 pnpm dev
 ```
 
-Any change to example/docs will be re-rendered instantly.
-
-If you update the core or theme packages, a rebuild is required. Or you can use
-the watch mode for both nextra and the theme in separated terminals.
+## 部署
+...
