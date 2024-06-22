@@ -6,13 +6,20 @@ import { useConfig } from 'nextra-theme-docs'
 const logo = (
   <>
     <img
-      src="full-logo.svg"
+      src="favicon.png"
       alt="JAVGO"
-      style={{ width: '90%', height: 50, borderRadius: 16 }}
+      style={{ width: '85%', height: 50, borderRadius: 16 }}
     />
-    {/* <span style={{ marginLeft: '.4em', fontWeight: 800 , fontSize: 'larger'}}>
-        JAVGO
-    </span> */}
+    <span
+      style={{
+        marginLeft: '0',
+        fontWeight: 900 ,
+        fontSize: '35px',
+        fontFamily: 'Georgia',
+      }}
+    >
+        AVGO
+    </span>
   </>
 )
 
@@ -136,7 +143,9 @@ const config: DocsThemeConfig = {
   // 目录
   toc: {
     // 返回顶部按钮
-    backToTop: true
+    backToTop: true,
+    // 开启后，TOC 会显示在页面右侧，滚动时会粘在页面上. 若关闭，TOC 会直接显示在页面侧边栏上.
+    float: true
   }
 }
 
