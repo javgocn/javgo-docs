@@ -137,100 +137,6 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
 
-  examples/blog:
-    dependencies:
-      next:
-        specifier: 13.5.6
-        version: 13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      nextra:
-        specifier: workspace:*
-        version: link:../../packages/nextra
-      nextra-theme-blog:
-        specifier: workspace:*
-        version: file:packages/nextra-theme-blog(next@13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(nextra@file:packages/nextra(next@13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-cusdis@2.1.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-    dependenciesMeta:
-      nextra:
-        injected: true
-      nextra-theme-blog:
-        injected: true
-
-  examples/docs:
-    dependencies:
-      next:
-        specifier: 13.5.6
-        version: 13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      nextra:
-        specifier: workspace:*
-        version: link:../../packages/nextra
-      nextra-theme-docs:
-        specifier: workspace:*
-        version: file:packages/nextra-theme-docs(next@13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(nextra@file:packages/nextra(next@13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-    dependenciesMeta:
-      nextra:
-        injected: true
-      nextra-theme-docs:
-        injected: true
-
-  examples/swr-site:
-    dependencies:
-      focus-visible:
-        specifier: ^5.1.0
-        version: 5.2.0
-      intersection-observer:
-        specifier: ^0.10.0
-        version: 0.10.0
-      isomorphic-git:
-        specifier: 1.21.0
-        version: 1.21.0
-      markdown-to-jsx:
-        specifier: ^6.11.4
-        version: 6.11.4(react@18.2.0)
-      next:
-        specifier: 13.5.6
-        version: 13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      nextra:
-        specifier: workspace:*
-        version: link:../../packages/nextra
-      nextra-theme-docs:
-        specifier: workspace:*
-        version: file:packages/nextra-theme-docs(next@13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(nextra@file:packages/nextra(next@13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-      react-intersection-observer:
-        specifier: ^8.26.2
-        version: 8.34.0(react@18.2.0)
-    devDependencies:
-      autoprefixer:
-        specifier: ^10.4.15
-        version: 10.4.15(postcss@8.4.31)
-      postcss:
-        specifier: ^8.4.31
-        version: 8.4.31
-      tailwindcss:
-        specifier: ^3.3.3
-        version: 3.3.3
-    dependenciesMeta:
-      nextra:
-        injected: true
-      nextra-theme-docs:
-        injected: true
-
   packages/nextra:
     dependencies:
       '@headlessui/react':
@@ -2383,9 +2289,6 @@ packages:
     resolution: {integrity: sha512-sRpyiNrx2dEYIMmUXprS8nlpRg2Drs8m9ElX9vVEXaCB4XEAJhKfs7IcX0IwShjuOAjLR6wzIrgoptz1n19i1A==}
     hasBin: true
 
-  async-lock@1.4.0:
-    resolution: {integrity: sha512-coglx5yIWuetakm3/1dsX9hxCNox22h7+V80RQOu2XUUMidtArxKoZoOtHUPuR84SycKTXzgGzAUR5hJxujyJQ==}
-
   asynciterator.prototype@1.0.0:
     resolution: {integrity: sha512-wwHYEIS0Q80f5mosx3L/dfG5t5rjEa9Ft51GTaNt862EnpyGHpgz2RkZvLPp1oF5TnAiTohkEKVEu8pQPJI7Vg==}
 
@@ -2586,9 +2489,6 @@ packages:
     resolution: {integrity: sha512-TdHqgGf9odd8SXNuxtUBVx8Nv+qZOejE6qyqiy5NtbYYQOeFa6zmHkxlPzmaLxWWHsU6nJmB7AETdVPi+2NBUg==}
     engines: {node: '>=8'}
 
-  clean-git-ref@2.0.1:
-    resolution: {integrity: sha512-bLSptAy2P0s6hU4PzuIMKmMJJSE6gLXGH1cntDu7bWJUksvuM+7ReOK61mozULErYvP6a15rnYl0zFDef+pyPw==}
-
   clean-regexp@1.0.0:
     resolution: {integrity: sha512-GfisEZEJvzKrmGWkvfhgzcz/BllN1USeqD2V6tg14OAOgaCD2Z/PUEuxnAZ/nPvmaHRG7a8y77p1T/IRQ4D1Hw==}
     engines: {node: '>=4'}
@@ -2693,11 +2593,6 @@ packages:
   cosmiconfig@8.2.0:
     resolution: {integrity: sha512-3rTMnFJA1tCOPwRxtgF4wd7Ab2qvDbL8jX+3smjIbS4HlZBagTlpERbdN7iAbWlrfxE3M8c27kTwTawQ7st+OQ==}
     engines: {node: '>=14'}
-
-  crc-32@1.2.2:
-    resolution: {integrity: sha512-ROmzCKrTnOwybPcJApAA6WBWij23HVfGVNKqqrZpuyZOHqK2CwHSvpGuyt/UNNvaIjEd8X5IFGp4Mh+Ie1IHJQ==}
-    engines: {node: '>=0.8'}
-    hasBin: true
 
   cross-spawn@5.1.0:
     resolution: {integrity: sha512-pTgQJ5KC0d2hcY8eyL1IzlBPYjTkyH72XRZPnLyKus2mBfNjQs3klqbJU2VILqZryAZUt9JOb3h/mWMy23/f5A==}
@@ -3011,9 +2906,6 @@ packages:
 
   didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
-
-  diff3@0.0.3:
-    resolution: {integrity: sha512-iSq8ngPOt0K53A6eVr4d5Kn6GNrM2nQZtC740pzIriHtn4pOQ2lyzEXQMBeVcWERN0ye7fhBsk9PbLLQOnUx/g==}
 
   diff@5.1.0:
     resolution: {integrity: sha512-D+mk+qE8VC/PAUrlAU34N+VfXev0ghe5ywmpqrawphmVZc1bEfn56uo9qpyGp1p4xpzOHkSW4ztBd6L7Xx4ACw==}
@@ -3721,9 +3613,6 @@ packages:
     resolution: {integrity: sha512-5Hh7Y1wQbvY5ooGgPbDaL5iYLAPzMTUrjMulskHLH6wnv/A+1q5rgEaiuqEjB+oxGXIVZs1FF+R/KPN3ZSQYYg==}
     engines: {node: '>=12'}
 
-  intersection-observer@0.10.0:
-    resolution: {integrity: sha512-fn4bQ0Xq8FTej09YC/jqKZwtijpvARlRp6wxL5WTA6yPe2YWSJ5RJh7Nm79rK2qB0wr6iDQzH60XGq5V/7u8YQ==}
-
   intersection-observer@0.12.2:
     resolution: {integrity: sha512-7m1vEcPCxXYI8HqnL8CKI6siDyD+eIWSwgB3DZA+ZTogxk9I4CDnj4wilt9x/+/QbHI4YG5YZNmC6458/e9Ktg==}
 
@@ -3919,11 +3808,6 @@ packages:
 
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
-
-  isomorphic-git@1.21.0:
-    resolution: {integrity: sha512-ZqCAUM63CYepA3fB8H7NVyPSiOkgzIbQ7T+QPrm9xtYgQypN9JUJ5uLMjB5iTfomdJf3mdm6aSxjZwnT6ubvEA==}
-    engines: {node: '>=12'}
-    hasBin: true
 
   iterator.prototype@1.1.0:
     resolution: {integrity: sha512-rjuhAk1AJ1fssphHD0IFV6TWL40CwRZ53FrztKx43yk2v6rguBYsY4Bj1VU4HmoMmKwZUlx7mfnhDf9cOp4YTw==}
@@ -4216,12 +4100,6 @@ packages:
   markdown-table@3.0.2:
     resolution: {integrity: sha512-y8j3a5/DkJCmS5x4dMCQL+OR0+2EAq3DOtio1COSHsmW2BGXnNCK3v12hJt1LrUz5iZH5g0LmuYOjDdI+czghA==}
 
-  markdown-to-jsx@6.11.4:
-    resolution: {integrity: sha512-3lRCD5Sh+tfA52iGgfs/XZiw33f7fFX9Bn55aNnVNUd2GzLDkOWyKYYD8Yju2B1Vn+feiEdgJs8T6Tg0xNokPw==}
-    engines: {node: '>= 4'}
-    peerDependencies:
-      react: ^18.2.0
-
   match-sorter@6.3.1:
     resolution: {integrity: sha512-mxybbo3pPNuA+ZuCUhm5bwNkXrJTbsk5VWbR5wiwz/GC6LIiegBGn2w3O08UG/jdbYLinw51fSQ5xNU1U3MgBw==}
 
@@ -4463,9 +4341,6 @@ packages:
   minimist@1.2.6:
     resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
 
-  minimisted@2.0.1:
-    resolution: {integrity: sha512-1oPjfuLQa2caorJUM8HV8lGgWCc0qqAO1MNv/k05G4qslmsndV/5WdNZrqCiyqiz3wohia2Ij2B7w2Dr7/IyrA==}
-
   minipass@5.0.0:
     resolution: {integrity: sha512-3FnjYuehv9k6ovOEbyOswadCDPX1piCfhV8ncmYtHOjuPwylVWsghTLo7rabjC3Rx5xD4HDx8Wm1xnMF7S5qFQ==}
     engines: {node: '>=8'}
@@ -4545,34 +4420,6 @@ packages:
         optional: true
       sass:
         optional: true
-
-  nextra-theme-blog@file:packages/nextra-theme-blog:
-    resolution: {directory: packages/nextra-theme-blog, type: directory}
-    peerDependencies:
-      next: 13.5.6
-      nextra: workspace:*
-      react: ^18.2.0
-      react-cusdis: ^2.1.3
-      react-dom: ^18.2.0
-    peerDependenciesMeta:
-      react-cusdis:
-        optional: true
-
-  nextra-theme-docs@file:packages/nextra-theme-docs:
-    resolution: {directory: packages/nextra-theme-docs, type: directory}
-    peerDependencies:
-      next: 13.5.6
-      nextra: workspace:*
-      react: ^18.2.0
-      react-dom: ^18.2.0
-
-  nextra@file:packages/nextra:
-    resolution: {directory: packages/nextra, type: directory}
-    engines: {node: '>=16'}
-    peerDependencies:
-      next: 13.5.6
-      react: ^18.2.0
-      react-dom: ^18.2.0
 
   no-case@3.0.4:
     resolution: {integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==}
@@ -4728,9 +4575,6 @@ packages:
 
   pako@0.2.9:
     resolution: {integrity: sha512-NUcwaKxUxWrZLpDG+z/xZaCgQITkA/Dv4V/T6bw7VON6l1Xz/VnrBqrYjZQ12TamKHzITTfOEIYUj48y2KXImA==}
-
-  pako@1.0.11:
-    resolution: {integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==}
 
   parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
@@ -5034,11 +4878,6 @@ packages:
     peerDependencies:
       react: ^18.2.0
 
-  react-intersection-observer@8.34.0:
-    resolution: {integrity: sha512-TYKh52Zc0Uptp5/b4N91XydfSGKubEhgZRtcg1rhTKABXijc4Sdr1uTp5lJ8TN27jwUsdXxjHXtHa0kPj704sw==}
-    peerDependencies:
-      react: ^18.2.0
-
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
@@ -5285,10 +5124,6 @@ packages:
 
   set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
-
-  sha.js@2.4.11:
-    resolution: {integrity: sha512-QMEp5B7cftE7APOjk5Y6xgrbWu+WkLVQwk8JNjZ8nKRciZaByEW6MubieAiToS7+dwvrjGhH8jRXz3MVd0AYqQ==}
-    hasBin: true
 
   sharp@0.32.6:
     resolution: {integrity: sha512-KyLTWwgcR9Oe4d9HwCwNM2l7+J0dUQwn/yf7S0EnTtb0eVS4RxO0eUSvxPtzT4F3SY+C4K6fqdv/DO27sJ/v/w==}
@@ -5910,9 +5745,6 @@ packages:
   universalify@2.0.0:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
-
-  unquote@1.1.1:
-    resolution: {integrity: sha512-vRCqFv6UhXpWxZPyGDh/F3ZpNv8/qo7w6iufLpQg9aKnQ71qM4B5KiI7Mia9COcjEhrO9LueHpMYjYzsWH3OIg==}
 
   update-browserslist-db@1.0.11:
     resolution: {integrity: sha512-dCwEFf0/oT85M1fHBg4F0jtLwJrutGoHSQXCh7u4o2t1drG+c0a9Flnqww6XUKSfQMPpJBRjU8d4RXB09qtvaA==}
@@ -8390,8 +8222,6 @@ snapshots:
 
   astring@1.8.3: {}
 
-  async-lock@1.4.0: {}
-
   asynciterator.prototype@1.0.0:
     dependencies:
       has-symbols: 1.0.3
@@ -8599,8 +8429,6 @@ snapshots:
 
   ci-info@4.0.0: {}
 
-  clean-git-ref@2.0.1: {}
-
   clean-regexp@1.0.0:
     dependencies:
       escape-string-regexp: 1.0.5
@@ -8715,8 +8543,6 @@ snapshots:
       js-yaml: 4.1.0
       parse-json: 5.2.0
       path-type: 4.0.0
-
-  crc-32@1.2.2: {}
 
   cross-spawn@5.1.0:
     dependencies:
@@ -9053,8 +8879,6 @@ snapshots:
       dequal: 2.0.3
 
   didyoumean@1.2.2: {}
-
-  diff3@0.0.3: {}
 
   diff@5.1.0: {}
 
@@ -10063,8 +9887,6 @@ snapshots:
 
   internmap@2.0.3: {}
 
-  intersection-observer@0.10.0: {}
-
   intersection-observer@0.12.2: {}
 
   is-alphabetical@2.0.1: {}
@@ -10239,20 +10061,6 @@ snapshots:
   isarray@2.0.5: {}
 
   isexe@2.0.0: {}
-
-  isomorphic-git@1.21.0:
-    dependencies:
-      async-lock: 1.4.0
-      clean-git-ref: 2.0.1
-      crc-32: 1.2.2
-      diff3: 0.0.3
-      ignore: 5.2.0
-      minimisted: 2.0.1
-      pako: 1.0.11
-      pify: 4.0.1
-      readable-stream: 3.6.0
-      sha.js: 2.4.11
-      simple-get: 4.0.1
 
   iterator.prototype@1.1.0:
     dependencies:
@@ -10512,12 +10320,6 @@ snapshots:
   markdown-extensions@1.1.1: {}
 
   markdown-table@3.0.2: {}
-
-  markdown-to-jsx@6.11.4(react@18.2.0):
-    dependencies:
-      prop-types: 15.8.1
-      react: 18.2.0
-      unquote: 1.1.1
 
   match-sorter@6.3.1:
     dependencies:
@@ -11049,10 +10851,6 @@ snapshots:
 
   minimist@1.2.6: {}
 
-  minimisted@2.0.1:
-    dependencies:
-      minimist: 1.2.6
-
   minipass@5.0.0: {}
 
   mixme@0.5.4: {}
@@ -11135,70 +10933,6 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
-
-  nextra-theme-blog@file:packages/nextra-theme-blog(next@13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(nextra@file:packages/nextra(next@13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-cusdis@2.1.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
-    dependencies:
-      next: 13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      next-themes: 0.2.1(next@13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      nextra: file:packages/nextra(next@13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    optionalDependencies:
-      react-cusdis: 2.1.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-
-  nextra-theme-docs@file:packages/nextra-theme-docs(next@13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(nextra@file:packages/nextra(next@13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
-    dependencies:
-      '@headlessui/react': 1.7.17(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@popperjs/core': 2.11.8
-      clsx: 2.0.0
-      escape-string-regexp: 5.0.0
-      flexsearch: 0.7.31
-      focus-visible: 5.2.0
-      git-url-parse: 13.1.0
-      intersection-observer: 0.12.2
-      match-sorter: 6.3.1
-      next: 13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      next-seo: 6.0.0(next@13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      next-themes: 0.2.1(next@13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      nextra: file:packages/nextra(next@13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      scroll-into-view-if-needed: 3.1.0
-      zod: 3.22.3
-
-  nextra@file:packages/nextra(next@13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
-    dependencies:
-      '@headlessui/react': 1.7.17(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@mdx-js/mdx': 2.3.0
-      '@mdx-js/react': 2.3.0(react@18.2.0)
-      '@napi-rs/simple-git': 0.1.9
-      '@theguild/remark-mermaid': 0.0.5(react@18.2.0)
-      '@theguild/remark-npm2yarn': 0.2.0
-      clsx: 2.0.0
-      github-slugger: 2.0.0
-      graceful-fs: 4.2.11
-      gray-matter: 4.0.3
-      katex: 0.16.9
-      lodash.get: 4.4.2
-      next: 13.5.6(@babel/core@7.21.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      next-mdx-remote: 4.2.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      p-limit: 3.1.0
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      rehype-katex: 7.0.0
-      rehype-pretty-code: 0.9.11(shiki@0.14.3)
-      rehype-raw: 7.0.0
-      remark-gfm: 3.0.1
-      remark-math: 5.1.1
-      remark-reading-time: 2.0.1
-      shiki: 0.14.3
-      slash: 3.0.0
-      title: 3.5.3
-      unist-util-remove: 4.0.0
-      unist-util-visit: 5.0.0
-      zod: 3.22.3
-    transitivePeerDependencies:
-      - supports-color
 
   no-case@3.0.4:
     dependencies:
@@ -11365,8 +11099,6 @@ snapshots:
   p-try@2.2.0: {}
 
   pako@0.2.9: {}
-
-  pako@1.0.11: {}
 
   parent-module@1.0.1:
     dependencies:
@@ -11627,10 +11359,6 @@ snapshots:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
-
-  react-intersection-observer@8.34.0(react@18.2.0):
-    dependencies:
-      react: 18.2.0
 
   react-is@16.13.1: {}
 
@@ -11933,11 +11661,6 @@ snapshots:
       randombytes: 2.1.0
 
   set-blocking@2.0.0: {}
-
-  sha.js@2.4.11:
-    dependencies:
-      inherits: 2.0.4
-      safe-buffer: 5.2.1
 
   sharp@0.32.6:
     dependencies:
@@ -12643,8 +12366,6 @@ snapshots:
   universalify@0.2.0: {}
 
   universalify@2.0.0: {}
-
-  unquote@1.1.1: {}
 
   update-browserslist-db@1.0.11(browserslist@4.21.10):
     dependencies:

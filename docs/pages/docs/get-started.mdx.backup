@@ -68,7 +68,7 @@ import { Callout } from 'nextra/components'
 5. Create `pages/_app.jsx` and include the theme stylesheet:
 
 ```jsx filename="_app.jsx"
-import 'nextra-theme-docs/style.css'
+import 'nextra-theme-docs/css/style.css'
 
 export default function Nextra({ Component, pageProps }) {
   return <Component {...pageProps} />
